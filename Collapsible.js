@@ -143,7 +143,7 @@ class Collapsible extends Component {
     const { height, contentHeight, measuring, measured } = this.state;
     const hasKnownHeight = !measuring && (measured || collapsed);
     const style = hasKnownHeight && {
-      overflow: 'hidden',
+      overflow: 'scroll',
       height: height,
     };
     const contentStyle = {};
